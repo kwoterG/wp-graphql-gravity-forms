@@ -250,7 +250,7 @@ class Form implements Hookable, Type, Field {
             'args' => [
                 'id' => [
                     'type'        => [ 'non_null' => 'ID' ],
-                    'description' => __( "Unique global ID for the object. Base-64 encode a string like this, where '123' is the form ID: '{self::TYPE}:123'.", 'wp-graphql-gravity-forms' ),
+                    'description' => __( "Unique global ID for the object. Base-64 encode a string like this, where '123' is the form ID: '".{self::TYPE}.":123'.", 'wp-graphql-gravity-forms' ),
                 ],
             ],
             'resolve' => function( $root, array $args ) {
